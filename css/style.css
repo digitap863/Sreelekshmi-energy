@@ -407,7 +407,7 @@ span.forex i {
     }
     .logo {
         text-align: left;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .top-info-social {
         display: none;
@@ -416,7 +416,7 @@ span.forex i {
 
 @media all and (max-width: 479px) {
     .logo img {
-        width: 180px;
+        width: 200px;
     }
 }
 
