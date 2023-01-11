@@ -33,6 +33,129 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <script>
+
+
+        window.addEventListener('scroll', () => {
+            let item = document.querySelector(".director-animation")
+            let ceo = document.querySelector(".ceo")
+            let logo = document.querySelector(".logo-animationclass")
+            let about = document.querySelector(".animation-about")
+            let observer = new IntersectionObserver((enteres) => {
+
+                const entry = enteres[0]
+
+                if (entry.isIntersecting) {
+                    document.querySelector(".ceo-details").classList.add("ceo-animation")
+
+                } else {
+                    document.querySelector(".ceo-details").classList.remove("ceo-animation")
+
+                }
+
+            })
+            observer.observe(item)
+            let observer2 = new IntersectionObserver((enteres) => {
+
+                const entry2 = enteres[0]
+                if (entry2.isIntersecting) {
+                    document.querySelector(".ceo").classList.add("animation-ceo")
+
+                } else {
+                    document.querySelector(".ceo").classList.remove("animation-ceo")
+
+                }
+
+
+            })
+            observer2.observe(ceo)
+
+            let observer3 = new IntersectionObserver((enteres) => {
+                const entry3 = enteres[0]
+                if (entry3.isIntersecting) {
+                    document.querySelector(".animation-logo").classList.add("new-animation-logo")
+
+                } else {
+
+                    document.querySelector(".animation-logo").classList.remove("new-animation-logo")
+                }
+
+
+            })
+            observer3.observe(logo)
+            let observer4 = new IntersectionObserver((enteres) => {
+                const entry4 = enteres[0]
+                if (entry4.isIntersecting) {
+
+                    document.querySelector(".company-details").classList.add("about-animation")
+                } else {
+
+                    document.querySelector(".company-details").classList.remove("about-animation")
+
+                }
+
+            })
+            observer4.observe(about)
+
+        })
+
+
+    </script>
+    <style>
+        .ceo-details {
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+
+        }
+
+        .ceo-animation {
+            transform: translateX(0px);
+            opacity: 1;
+
+        }
+
+        .ceo {
+            transform: translateX(-100px);
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+
+        }
+
+
+
+        .animation-ceo {
+            transform: translateX(0px);
+            opacity: 1;
+
+        }
+
+        .company-details {
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+        }
+
+
+        .about-animation {
+            transform: translateX(0px);
+            opacity: 1;
+
+        }
+
+        .animation-logo {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            transition: all 1s ease-in-out;
+
+
+        }
+
+        .new-animation-logo {
+            transform: rotateY(360deg);
+        }
+    </style>
 
 </head>
 
@@ -79,7 +202,7 @@
                                 <div class="top-info">
                                     <div class="call">
                                         <h3> CALL US </h3>
-                                        <p>+919562418266 </p>
+                                        <p>0484 2989297 </p>
                                     </div>
                                     <div class="email">
                                         <h3> EMAIL US </h3>
@@ -176,15 +299,17 @@
                             <img src="images/IMAGE.webp" alt="Slider 1" />
                             <div class="slider-content">
                                 <div class="container">
-                                    <h2> Complete Solutions for <br>
-                                        LPG, PNG, Fuel Piping Systems
+                                    <h2 class="animation-header">
+                                        Complete solution for <br> LPG & PNG Fuel Piping System
 
                                     </h2>
-                                    <p> Holisticly brand sustainable solutions rather than clicks-and-mortar
+                                    <p class="animation-visible"> Holisticly brand sustainable solutions rather than
+                                        clicks-and-mortar
                                         applications.
                                         <br> Phosfluorescently whiteboard fully tested initiatives.
                                     </p>
-                                    <a class="btn primary-btn"> KNOW MORE <i class="fa fa-angle-right"></i> </a>
+                                    <a class="btn primary-btn animation-visible"> KNOW MORE <i
+                                            class="fa fa-angle-right"></i> </a>
                                 </div>
                             </div>
                         </li>
@@ -194,14 +319,16 @@
                             <div class="slider-content text-center">
                                 <div class="container">
 
-                                    <h2>Green Navigation And
+                                    <h2 class="animation-header green-nav">Green Navigation And
                                         Sustainability</h2>
-                                    <p> Quickly disintermediate collaborative web services via high standards in
+                                    <p class="animation-visible"> Quickly disintermediate collaborative web services via
+                                        high standards in
                                         products.
                                         <br> Compellingly fabricate cutting-edge portals through alternative
                                         <br> opportunities. Objectively customize.
                                     </p>
-                                    <a class="btn primary-btn"> KNOW MORE <i class="fa fa-angle-right"></i> </a>
+                                    <a class="btn primary-btn animation-visible"> KNOW MORE <i
+                                            class="fa fa-angle-right"></i> </a>
                                 </div>
                             </div>
                         </li>
@@ -210,14 +337,15 @@
                             <div class="slider-content text-center">
                                 <div class="container">
 
-                                    <h2>PNG
+                                    <h2 class="animation-header">PNG
                                         A Convinient & Consistent Energy Solution</h2>
                                     <p> Quickly disintermediate collaborative web services via high standards in
                                         products.
                                         <br> Compellingly fabricate cutting-edge portals through alternative
                                         <br> opportunities. Objectively customize.
                                     </p>
-                                    <a class="btn primary-btn"> KNOW MORE <i class="fa fa-angle-right"></i> </a>
+                                    <a class="btn primary-btn animation-visible"> KNOW MORE <i
+                                            class="fa fa-angle-right"></i> </a>
                                 </div>
                             </div>
                         </li>
@@ -230,32 +358,36 @@
                     <div class="row company">
 
                         <div class="col-md-7 col-sm-12">
-                            <h2
+                            <!-- <h2
                                 style="display: flex;align-items: center;justify-content: center; color: #F58727; margin-bottom: 15px;">
                                 <span style="font-size: 46px;font-weight: 700;">WELCOME !</span>
-                            </h2>
-                            <div class="company-image"
+                            </h2> -->
+                            <div class="company-image "
                                 style="display: flex;align-items: center;justify-content: center;">
                                 <div class="hover-effectt " style="background-color:transparent">
-                                    <img src="logo/aboutimg.png" alt="Company Image" />
+                                    <img src="logo/aboutimg.png" alt="Company Image" class="animation-logo" />
                                 </div>
+                                <div class="logo-animationclass"></div>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-8">
 
-                            <div class="company-details" style="text-align: justify;">
+                            <div class="company-details" style="text-align: justify; ">
                                 <h2 class="company-title color-title"> ABOUT </h2>
-                                <h4 class="company-subtitle subtitle"> SreeLakshmi Energy Systems Pvt. Ltd
+                                <h4 class="company-subtitle subtitle animation-about"> SreeLakshmi Energy Systems Pvt.
+                                    Ltd
                                     Complete Solutions for LPG & PNG Fuel Piping Systems. </h4>
-                                <p> We are an ISO 9001:2015 certified company established in the year 2006 engaged in
-                                    the business as Consultant Engineers & Contractors for LPG & other fuel piping
-                                    installations, Gas monitoring & detection systems.
+                                <p>We are an ISO 9001:2015 Certified & MSME Registered Company established in the year
+                                    2006 engaged in the business as Consultant Engineers & Contractors for LPG/PNG Fuel
+                                    Piping Installations, Gas Monitoring System, Gas Detection System, Industrial
+                                    Burners & Heat Pumps.<br>
                                     During these years we have been associated with all major industrial establishments,
                                     Construction and Real estate developers, IT Campuses, Hotels, Tourism & Hospitality
-                                    industries, Medical & Education sector’s etc.We have made an impact by creating
+                                    industries, Medical & Education sector’s etc. <br>We have made an impact by creating
                                     state of the art LPG infrastructure for Industrial, Hospitality and Residential
                                     projects with International quality standards and unmatched Customer service. </p>
-                                <a href="/about.html" class="btn btn-primary" role="button"> READ MORE</a>
+                                <a href="/about-1.html" class="btn btn-primary " role="button"> READ
+                                    MORE</a>
                             </div>
                         </div>
 
@@ -275,9 +407,10 @@
 
                         <div class="col-md-6">
                             <div class="ceo-details" style="text-align: justify;">
-                                <h2 class="ceo-title color-title"> WORD FROM DIRECTOR </h2>
+                                <h2 class="ceo-title color-title">Message from Director </h2>
                                 <h4 class="ceo-subtitle subtitle"> READ THE MESSAGE FROM OUR DIRECTOR </h4>
-                                <p>" May I take this opportunity to thank our valued customers, whose continued
+                                <p class="director-animation">" May I take this opportunity to thank our valued
+                                    customers, whose continued
                                     patronage
                                     and confidence in our work inspires us to extend the best of services and enables us
                                     to provide value for their money. I always wanted to push my company to more
@@ -289,8 +422,8 @@
                                     malls, education institutions and more than 75,000 residential apartments.
 
 
-                                </p>
-                                <p>We are committed to total customer satisfaction by identifying their specific needs,
+                                    <br>We are committed to total customer satisfaction by
+                                    identifying their specific needs,
                                     translating them into quality products and providing dependable
                                     after-sales-services.
                                     For all our success, the management is indebted to on most dedicated team of
@@ -302,9 +435,9 @@
                                     Sreelakshmi Energy Systems Pvt.Ltd. is never ending. But with the support of my team
                                     and clients, I am confident that the company will continue to scale milestones of
                                     excellence for years to come."
-                                </p>
 
-                                <!-- <p class="ceo-name">Gregory Walker, CEO</p> -->
+
+                                    <!-- <p class="ceo-name">Gregory Walker, CEO</p> -->
                             </div>
                         </div>
                     </div>
@@ -337,7 +470,7 @@
                         </div> -->
                         <div class="col-md-6">
                             <div class="hover-effect" style="width: 100%;">
-                                <img src="/images/images/gallery/9 -3.jpg" alt="social-resposibility" />
+                                <img src="/images/gallery/9 -3.jpg" alt="social-resposibility" />
                             </div>
                             <h4 class="services-title-one subtitle">INFRASTRUCTURE</h4>
                             <p style="text-align: justify;">Our infrastructure includes all Modern Machinery & Equipment
@@ -355,7 +488,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- 
             <section class="home-links">
                 <div class="container">
                     <div class="row links">
@@ -374,12 +507,12 @@
                         <div class="col-md-2">
                             <a href="clientskeral.html" class="btn btn-primary" role="button">ClIENTS</a>
                         </div>
-                        <!-- <div class="col-md-2">
+                        <div class="col-md-2">
                             <a href="#" class="btn btn-primary" role="button">LATEST NEWS</a>
-                        </div> -->
+                        </div> 
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section class="home-process">
                 <div class="container">
@@ -397,8 +530,8 @@
 
 
                                 <ul>
-                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Designing as per customer’s
-                                        requirements
+                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Designing as per mandatory
+                                        specification and customer’s requirements.
                                     </li>
                                     <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Continuous improvement
                                         in design and installation skills. </li>
@@ -423,7 +556,8 @@
 
                         <div class="col-sm-6">
                             <div class="hover-effect" style="width: 100%;">
-                                <img src="https://st4.depositphotos.com/17714924/27651/i/600/depositphotos_276518300-stock-photo-quality-policy-icon-symbol-creative.jpg" style="margin-top: -7rem;" />
+                                <img src="https://st4.depositphotos.com/17714924/27651/i/600/depositphotos_276518300-stock-photo-quality-policy-icon-symbol-creative.jpg"
+                                    style="margin-top: -7rem;" />
                             </div>
                         </div>
                     </div>
@@ -434,35 +568,36 @@
     <section class="home-stats">
         <div class="container">
             <div class="row stats">
-                <div class="col-md-3 col-xs-6">
-                    <img src="images/globe.png" alt="" />
-                    <div class="stats-info">
-                        <h4 class="counter">26</h4>
-                        <p>Offices Worldwide</p>
-                    </div>
-                </div>
+
 
                 <div class="col-md-3 col-xs-6">
                     <img src="images/friends.png" alt="" />
                     <div class="stats-info">
-                        <h4 class="counter">10000</h4>
-                        <p>Satisfied Employees</p>
+                        <h4 class="counter">150</h4>
+                        <p>Employees</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-xs-6">
                     <img src="images/fire.png" alt="" />
                     <div class="stats-info">
-                        <h4 class="counter">126</h4>
-                        <p>Refineries &amp; Operations</p>
+                        <h4 class="counter">20</h4>
+                        <p>Up Capital </p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-xs-6">
                     <img src="images/badge.png" alt="" />
                     <div class="stats-info">
-                        <h4 class="counter">35</h4>
-                        <p>Awards &amp; Recognitions</p>
+                        <h4 class="counter">100</h4>
+                        <p>Turnover</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <img src="images/globe.png" alt="" />
+                    <div class="stats-info">
+                        <h4 class="counter">2006</h4>
+                        <p>Year established </p>
                     </div>
                 </div>
 
@@ -582,57 +717,57 @@
             <div class="row">
                 <div class="column col-md-4 fc">
                     <div class="content">
-                        <img src="/images/images/gallery/1 -1 facade.jpg" alt="Mountains" style="width:100%">
+                        <img src="/images/gallery/1 -1 facade.jpg" alt="Mountains" style="width:100%">
 
                     </div>
                 </div>
                 <div class="column col-md-4 fc">
                     <div class="content">
-                        <img src="/images/images/gallery/9 -3.jpg" alt="Lights" style="width:100%">
+                        <img src="/images/gallery/9 -3.jpg" alt="Lights" style="width:100%">
 
                     </div>
                 </div>
                 <div class="column col-md-4 fc">
                     <div class="content">
-                        <img src="/images/images/gallery/12-3.jpg" alt="Nature" style="width:100%">
+                        <img src="/images/gallery/12-3.jpg" alt="Nature" style="width:100%">
 
                     </div>
                 </div>
 
                 <div class="column col-md-4 fc">
                     <div class="content">
-                        <img src="/images/images/gallery/16-1.jpg" alt="Car" style="width:100%">
+                        <img src="/images/gallery/16-1.jpg" alt="Car" style="width:100%">
 
                     </div>
                 </div>
                 <div class="column col-md-4 cars">
                     <div class="content">
-                        <img src="/images/images/gallery/20-1.jpg" alt="Car" style="width:100%">
+                        <img src="/images/gallery/20-1.jpg" alt="Car" style="width:100%">
 
                     </div>
                 </div>
                 <div class="column col-md-4 cars">
                     <div class="content">
-                        <img src="/images/images/gallery/2-1 (1).jpg" alt="Car" style="width:100%">
+                        <img src="/images/gallery/2-1 (1).jpg" alt="Car" style="width:100%">
 
                     </div>
                 </div>
 
                 <div class=" column col-md-4 people">
                     <div class="content">
-                        <img src="/images/images/gallery/1ce5bb8230cb0468a5a4f807b0ec2d7c.jpg" alt="Car" style="width:100%">
+                        <img src="/images/gallery/1ce5bb8230cb0468a5a4f807b0ec2d7c.jpg" alt="Car" style="width:100%">
 
                     </div>
                 </div>
                 <div class="column col-md-4 people">
                     <div class="content">
-                        <img src="/images/images/gallery/8a0e8c7e5894760ae1e96dddae58a1ac.jpg" alt="Car" style="width:100%">
+                        <img src="/images/gallery/8a0e8c7e5894760ae1e96dddae58a1ac.jpg" alt="Car" style="width:100%">
 
                     </div>
                 </div>
                 <div class=" column col-md-4 people">
                     <div class="content">
-                        <img src="/images/images/gallery/5fc9508b86395363af8055ea88d3cdb0.jpg" alt="Car" style="width:100%">
+                        <img src="/images/gallery/5fc9508b86395363af8055ea88d3cdb0.jpg" alt="Car" style="width:100%">
 
                     </div>
                 </div>
@@ -644,7 +779,7 @@
     </section> -->
 
     <section class="home-partners">
-        <div class="container">
+        <div class="container" style="padding-bottom: 50px;">
             <div class="section-title text-center">
                 <h2 class="subtitle-testimonials title-2"> OUR CLIENTS </h2>
                 <div class="spacer-20"> </div>
@@ -654,160 +789,160 @@
                 <div class="logo-slides slides owl-carousel">
                     <div class="item">
                         <div class="partner-images ">
-                            <img src="/images/images/gallery/clients/inetenational/CINDA.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/CINDA.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/CROWNE PLAZA.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/CROWNE PLAZA.png" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/GRANT HYATT.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/GRANT HYATT.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/HILTON GARDEN INN.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/HILTON GARDEN INN.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/HOLIDAY INN.png" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/IBIS HOTELS.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/HOLIDAY INN.png" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/LARSEN & TOUBRO.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/IBIS HOTELS.png" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/LULU FLIGHT KITCHEN.png" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/LULU.jpg" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/MARRIOTT.jpg" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/PJ PRINCESS REGENCY.png" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/QASR AL THURAYA.jpg" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/RAMADA.jpg" alt="Partner Image 1"
-                                style="height: 10rem;">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/RAVIS HOTELS & RESORTS.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/LARSEN & TOUBRO.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/RO GROUP.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/LULU FLIGHT KITCHEN.png"
+                                alt="Partner Image 1" style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/LULU.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/TAJ.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/MARRIOTT.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/PJ PRINCESS REGENCY.png"
+                                alt="Partner Image 1" style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/QASR AL THURAYA.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/RAMADA.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/RAVIS HOTELS & RESORTS.png"
+                                alt="Partner Image 1" style="height: 10rem;">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/RO GROUP.png" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/TAJ.png" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/TCS.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/TCS.png" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/THE LALIT.png" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/THE LALIT.png" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/THE MUFFIN HOUSE.jpeg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/THE MUFFIN HOUSE.jpeg" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/THE RITS-CARLTON.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/THE RITS-CARLTON.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/THE TAMARA RESORTS.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/THE TAMARA RESORTS.jpg"
+                                alt="Partner Image 1" style="height: 10rem;">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="/images/gallery/clients/inetenational/VIVANTA.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/VIVANTA.jpg" alt="Partner Image 1"
-                                style="height: 10rem;">
+                            <img src="/images/gallery/clients/inetenational/WEB BARID & COMPANY.jpg"
+                                alt="Partner Image 1" style="height: 10rem;">
 
                         </div>
                     </div>
                     <div class="item">
                         <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/WEB BARID & COMPANY.jpg" alt="Partner Image 1"
-                                style="height: 10rem;">
-
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="partner-images">
-                            <img src="/images/images/gallery/clients/inetenational/YUM.jpg" alt="Partner Image 1"
+                            <img src="/images/gallery/clients/inetenational/YUM.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
 
                         </div>
@@ -1013,6 +1148,37 @@
 
     <!-- Jquery Library -->
     <style>
+        .animation-visible {
+            animation: joi 1s forwards;
+            animation-delay: 0.7s;
+            opacity: 0;
+
+
+        }
+
+        .animation-header {
+            animation: ani 1s forwards;
+            animation-delay: 0.3s;
+            transform: translateX(-200px);
+            opacity: 0;
+
+        }
+
+
+        @keyframes ani {
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes joi {
+            100% {
+
+                opacity: 1;
+            }
+        }
+
         .servicdhoverlay {
             padding: 2rem;
 
@@ -1158,6 +1324,9 @@
                 this.className += " active";
             });
         }
+
+
+
     </script>
 
 </body>

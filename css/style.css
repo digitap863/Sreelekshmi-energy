@@ -128,7 +128,7 @@ p {
     font-size: 16px;
     color: #677078;
     line-height: 1.688;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 }
 
 p + p:last-child {
@@ -192,7 +192,7 @@ blockquote {
 }
 
 section {
-    padding: 80px 0;
+    padding: 25px 0;
 }
 
 .sidebar {
@@ -280,7 +280,7 @@ main.main {
 
 @media all and (max-width: 480px) {
     section {
-        padding: 45px 0;
+        padding: 15px 0;
     }
 }
 
@@ -706,6 +706,7 @@ li.dropdown i.fa.dropdown-toggle {
 
 section.home-slider {
     padding: 0;
+    max-height: 200vh;
 }
 
 .flexslider {
