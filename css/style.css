@@ -41,13 +41,16 @@ TABLE OF CONTENTS
 /* --------------- Global Styles --------------- */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:400,700);
+ @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;700;900&family=Poppins:wght@100;300;400;600;700&family=Rubik:wght@300;500;700;900&display=swap);
 body {
     color: #8d8d8d;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     line-height: 1;
     padding: 0;
 }
-
+p{
+    font-weight: 500 !important;
+}
 body.boxed {
     max-width: 1170px;
     background: #f4f5f8;
@@ -349,6 +352,7 @@ span.forex i {
 
 .social ul.social-icons {
     padding-left: 15px;
+    margin-top: 15px;
 }
 
 .social ul.social-icons li {
@@ -365,11 +369,11 @@ span.forex i {
 
 .social ul.social-icons li a {
     color: #fff;
-    font-size: 21px;
+    font-size: 15px;
     display: block;
-    width: 52px;
-    height: 52px;
-    line-height: 52px;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
     text-align: center;
     background: rgba(9, 62, 182, 0.65);
     color: #fff;
@@ -861,13 +865,14 @@ section.home-slider {
 
 h2.color-title {
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #FFF;
-    background: #ffda44;
+    background: #20469e;
     margin: 0;
-    padding: 0 15px;
-    line-height: 28px;
+    padding: 3px 17px;
+    line-height: 26px;
+    border-radius: 8px;
 }
 
 h4.subtitle {
@@ -973,7 +978,7 @@ section.home-ceo {
 }
 
 .ceo-details {
-    padding: 45px 0;
+    padding: 15px 0 0 0;
 }
 
 .ceo-details h4.subtitle {
@@ -1289,9 +1294,7 @@ section.home-testimonials {
     background: #f4f5f8;
 }
 
-.section-title h2.title-2 {
-    margin: 20px 0;
-}
+
 
 .home-testimonials blockquote {
     background: #ffffff;
@@ -2127,7 +2130,7 @@ footer .copyright {
 }
 
 .widgets-social a {
-    background: #ffda44;
+    background: #ffff;
     width: 36px;
     height: 36px;
     color: #000;
@@ -2848,9 +2851,7 @@ section.about-employees {
     font-size: 16px;
     color: #1D1D1F;
     padding: 15px 0;
-    border-bottom: 2px solid #f4f5f8;
-    padding-left: 30px;
-    border-bottom: 2px solid #f4f5f8;
+    border-bottom: 4px solid #cbd1e4;
     position: relative;
 }
 
@@ -3424,7 +3425,14 @@ section.services-highlights {
         bottom: 30px;
     }
 }
+.ctaWhatsapp{
 
+    transition: all ease 0.3s;
+}
+.ctaWhatsapp:hover{
+    transform: rotate(360deg);
+
+}
 
 /*Image Hover Effects*/
 
@@ -3882,4 +3890,45 @@ ul.nav-tabs {
     /* makes sure it stays on top */
     height: 100%;
     overflow: hidden;
+}
+
+
+.contact-box{
+    height: 18rem;
+}
+.whatsapp{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+}
+.whatsapp img{
+    width: 5rem;
+}
+@media (max-width:991px) {
+    .logo{
+        width: 300px;
+    }
+    .whatsapp{
+        right: 60px;
+        top: 10px;
+        width: 4rem;
+    }
+}
+@media (max-width:991px) {
+    .our-services {
+        text-align: center;
+    }
+}
+.viewGallery{
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:#acc6ff;
+    text-decoration: none;
+    color: black;
+}
+.viewGallery:hover{
+    background-color: #96b5f8;
 }
