@@ -33,7 +33,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;700;900&family=Poppins:wght@100;300;400;600;700&family=Rubik:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- <script>
 
 
         window.addEventListener('scroll', () => {
@@ -98,9 +104,9 @@
         })
 
 
-    </script>
+    </script> -->
     <style>
-        .ceo-details {
+        /* .ceo-details {
             transform: translateX(100px);
             opacity: 0;
             transition: all 0.8s ease-in-out;
@@ -152,12 +158,62 @@
 
         .new-animation-logo {
             transform: rotateY(360deg);
+        } */
+
+
+
+        .solutionCard {
+            display: flex;
+            height: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .solutionCardInner {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            height: 90%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            border-radius: 10px;
+            transition: all 0.3s ease-out;
+
+        }
+
+        .solutionCard a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .solutionCardInner h3 {
+            text-align: center;
+            color: white;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .solutionCardInner:hover {
+            background-color: #1647b8;
+            opacity: 0.7;
+        }
+
+        .solutionCardInner:hover h3 {
+            transform: scale(1.1);
+        }
+
+        .solutionSection {
+            background: rgb(43, 61, 154);
+            background: linear-gradient(90deg, rgba(43, 61, 154, 1) 34%, rgba(249, 103, 55, 1) 100%);
         }
     </style>
 
 </head>
 
-<body class="homepage">
+<body class="homepage" style="width: 100%;overflow-x: hidden;">
 
     <!-- Preloader -->
     <div class="loader-wrapper">
@@ -184,17 +240,21 @@
                 <!-- Top Contact Info -->
                 <div class="row logo-top-info" style="padding: 0px;">
                     <div class="container">
-                        <div class="col-md-3 logo">
+                        <div class="col-md-3 col-sm-4  logo">
                             <!-- Main Logo -->
-                            <a href="index.html"><img src="images/logo/LOGOOOO (1).jpg" alt="Offshore Logo" /></a>
+                            <a href="index.html"><img src="assets/Sreelakshmi Energy Systems Pvt-logo-black-croped..png"
+                                    alt="Offshore Logo" /></a>
                             <!-- Responsive Toggle Menu -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                                <span class="sr-only"> Main Menu </span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
                         </div>
+
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only"> Main Menu </span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+
                         <div class="col-md-9 top-info-social">
                             <div class="pull-right">
                                 <div class="top-info">
@@ -213,12 +273,20 @@
                                 </div>
                                 <div class="social">
                                     <ul class="social-icons">
-                                        <li><a href="https://www.facebook.com/sreelakshmi.kochi/"><i
+                                        <li><a href="https://www.facebook.com/sreelakshmienergysystems"><i
                                                     class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://twitter.com/sreelakshmiltd"><i class="fa fa-twitter"
+                                        <li><a href="https://twitter.com/SreelakshmiLtd"><i class="fa fa-twitter"
                                                     aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.instagram.com/sreelakshmienergysystems/"><i
+                                        <li><a href="https://www.instagram.com/sreelakshmienergysystems"><i
                                                     class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a
+                                                href=" https://www.linkedin.com/in/sreelakshmi-energy-systems-pvt-ltd-5632ba216"><i
+                                                    class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCOn6p2pUCWgUfKnEbVG4bmQ"><i
+                                                    class="fa-brands fa-youtube"></i></a></li>
+
+
+
                                     </ul>
                                 </div>
                             </div>
@@ -243,10 +311,12 @@
                                         </a> </li>
                                     <li> <a href="services-4.html"> ⦁ GAS LEAKAGE DETECTING SYSTEM AND MONITORING</a>
                                     </li>
-                                    <li> <a href="services-5.html"> ⦁ PIPED NATURAL GAS INSTALLATION (RESIDENTIAL,
-                                            COMMERCIAL AND INDUSTRIAL)
-                                        </a> </li>
+                                    <li> <a href="services-5.html"> ⦁ PIPED NATURAL GAS INSTALLATION </a> </li>
                                     <li> <a href="services-6.html">⦁ AMC AND MAINTENANCE
+                                        </a> </li>
+                                    <li> <a href="services-7.html">⦁ SUNTEC AND REILLO BURNERS
+                                        </a> </li>
+                                    <li> <a href="services-8.html">⦁ LOT SKID SYSTEM
                                         </a> </li>
                                 </ul>
                             </li>
@@ -301,12 +371,11 @@
                                         Complete solution for <br> LPG & PNG Fuel Piping System
 
                                     </h2>
-                                    <p class="animation-visible"> Holisticly brand sustainable solutions rather than
-                                        clicks-and-mortar
-                                        applications.
-                                        <br> Phosfluorescently whiteboard fully tested initiatives.
+                                    <p class="animation-visible">Providing innovative solutions, building trust and
+                                        providing safe environment
+                                        <br> and sustainable solutions to our customers
                                     </p>
-                                    <a class="btn primary-btn animation-visible"> KNOW MORE <i
+                                    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
                                             class="fa fa-angle-right"></i> </a>
                                 </div>
                             </div>
@@ -325,7 +394,7 @@
                                         <br> Compellingly fabricate cutting-edge portals through alternative
                                         <br> opportunities. Objectively customize.
                                     </p>
-                                    <a class="btn primary-btn animation-visible"> KNOW MORE <i
+                                    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
                                             class="fa fa-angle-right"></i> </a>
                                 </div>
                             </div>
@@ -342,7 +411,7 @@
                                         <br> Compellingly fabricate cutting-edge portals through alternative
                                         <br> opportunities. Objectively customize.
                                     </p>
-                                    <a class="btn primary-btn animation-visible"> KNOW MORE <i
+                                    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
                                             class="fa fa-angle-right"></i> </a>
                                 </div>
                             </div>
@@ -384,8 +453,8 @@
                                     industries, Medical & Education sector’s etc. <br>We have made an impact by creating
                                     state of the art LPG infrastructure for Industrial, Hospitality and Residential
                                     projects with International quality standards and unmatched Customer service. </p>
-                                <a href="/about-1.html" class="btn btn-primary " role="button"> READ
-                                    MORE</a>
+                                <!-- <a href="/about-1.html" class="btn btn-primary " role="button"> READ
+                                    MORE</a> -->
                             </div>
                         </div>
 
@@ -398,13 +467,12 @@
                     <div class="row ceo" style="align-items: center;">
                         <div class="col-md-6">
 
-                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/ceo-icon.png"
-                                alt="CEO" />
+                            <img src="assets/ceo-image.jpg" alt="CEO" />
 
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ceo-details" style="text-align: justify;">
+                            <div class="ceo-details" style="text-align: justify;padding-bottom: 0;">
                                 <h2 class="ceo-title color-title">Message from Director </h2>
                                 <h4 class="ceo-subtitle subtitle"> READ THE MESSAGE FROM OUR DIRECTOR </h4>
                                 <p class="director-animation">" May I take this opportunity to thank our valued
@@ -442,75 +510,73 @@
                 </div>
             </section>
 
-            <section class="home-services">
+            <section>
                 <div class="container">
-                    <div class="row services">
-                        <div class="col-md-6">
-                            <div class="hover-effect" style="width: 100%;">
-                                <img src="https://midasindia.org/images/mission.jpg" alt="technology-innovation" />
-                            </div>
-                            <h4 class="services-title-one subtitle">OUR MISSION</h4>
-                            <p style="text-align: justify;">
-                                Provide the best service to our customers; strive to exceed customer’s needs &
-                                expectations. Establish long standing relationship with customers by providing high
-                                quality products & services at reasonable price.
-                            </p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-1 sm-0"></div>
+                                <div class="col-md-6" style="margin-bottom: 2rem;">
 
-                        </div>
-                        <!-- <div class="col-md-6">
-                            <div class="hover-effect">
-                                <img src="images/services-two.jpg" alt="our-operations" />
-                            </div>
-                            <h4 class="services-title-one subtitle">OUR OPERATIONS</h4>
-                            <p>Energistically productize wireless mindshare for emerging experiences. Myocardinate
-                                enabled alignments and magnetic scenarios. </p>
-                            <a href="#" class="btn btn-default btn-normal">Read More</a>
-                        </div> -->
-                        <div class="col-md-6">
-                            <div class="hover-effect" style="width: 100%;">
-                                <img src="/images/gallery/9 -3.jpg" alt="social-resposibility" />
-                            </div>
-                            <h4 class="services-title-one subtitle">INFRASTRUCTURE</h4>
-                            <p style="text-align: justify;">Our infrastructure includes all Modern Machinery & Equipment
-                                required for Pipeline
-                                Installations, and a team of dedicated and experienced Engineers and highly skilled
-                                Technicians.Our Materials Department ensures Quality materials are used at Project
-                                sites.
-                                We impart regular training to our technicians and engineers through external agencies to
-                                keep them updated on latest installation practices, technology & Safety aspects to
-                                ensure safe working atmosphere at project sites.
+                                    <div style="display: flex;align-items: center;justify-content: start;">
+                                        <!-- <img style="width: 5rem;" src="assets/achievement.svg" alt=""> -->
+                                        <h1>Our Mission</h1>
+                                    </div>
 
-                            </p>
+                                    <p style="text-align: justify;"> Provide the best service to our customers; strive
+                                        to exceed customer’s needs &
+                                        expectations. Establish long standing relationship with customers by providing
+                                        high
+                                        quality products & services at reasonable price.</p>
+                                </div>
+                                <div class="col-md-4 sm-0">
+                                    <img style="width: 100%;height: 100%;"
+                                        src="https://midasindia.org/images/mission.jpg" alt="">
+                                </div>
+                            </div>
 
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row" style="row-gap: 1rem;">
+                                <div class="col-md-1 sm-0"></div>
+                                <div class="col-md-4 sm-0" style="margin-top: 8%;">
+                                    <img style="width: 100%;height: 100%;"
+                                        src="https://etimg.etb2bimg.com/thumb/msid-95076190,imgsize-63810,width-1200,height-628,overlay-etenergyworld/opinion-interconnectors-set-for-key-role-as-green-energy-systems-grow.jpg"
+                                        alt="">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div style="display: flex;align-items: center;justify-content: end;">
+                                        <!-- <img style="width: 5rem;" src="assets/infrastructure.svg" alt=""> -->
+                                        <h1>Infrastructure</h1>
+                                    </div>
+
+                                    <p style="text-align: justify;"> Our infrastructure includes all Modern Machinery &
+                                        Equipment
+                                        required for Pipeline
+                                        Installations, and a team of dedicated and experienced Engineers and highly
+                                        skilled
+                                        Technicians.Our Materials Department ensures Quality materials are used at
+                                        Project
+                                        sites.
+                                        We impart regular training to our technicians and engineers through external
+                                        agencies to
+                                        keep them updated on latest installation practices, technology & Safety aspects
+                                        to
+                                        ensure safe working atmosphere at project sites.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </section>
-            <!-- 
-            <section class="home-links">
-                <div class="container">
-                    <div class="row links">
-                        <div class="col-md-2">
-                            <h4 class="links-title subtitle">Quick Links</h4>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="about-1.html" class="btn btn-primary" role="button">ABOUT US</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="contact-1.html" class="btn btn-primary" role="button">CONTACT US</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="gallery.html" class="btn btn-primary" role="button">GALLERY</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="clientskeral.html" class="btn btn-primary" role="button">ClIENTS</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" class="btn btn-primary" role="button">LATEST NEWS</a>
-                        </div> 
-                    </div>
-                </div>
-            </section> -->
+
+
 
             <section class="home-process">
                 <div class="container">
@@ -528,17 +594,17 @@
 
 
                                 <ul>
-                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Designing as per mandatory
+                                    <li>Designing as per mandatory
                                         specification and customer’s requirements.
                                     </li>
-                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Continuous improvement
+                                    <li> Continuous improvement
                                         in design and installation skills. </li>
-                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Extending quick service
+                                    <li> Extending quick service
                                         at competitive price with excellent quality.</li>
-                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Materials and
+                                    <li> Materials and
                                         equipment’s conforming to international standards.
                                     </li>
-                                    <li><i class="fa fa-dot-circle-o" aria-hidden="true"></i> After sales service and
+                                    <li>After sales service and
                                         support to ensure customer satisfaction.
                                     </li>
 
@@ -563,6 +629,7 @@
     </div>
     </section>
 
+
     <section class="home-stats">
         <div class="container">
             <div class="row stats">
@@ -579,7 +646,8 @@
                 <div class="col-md-3 col-xs-6">
                     <img src="images/fire.png" alt="" />
                     <div class="stats-info">
-                        <h4 class="counter">20</h4>
+                        <h4 class="counter" style="display: inline;">20</h4> <span
+                            style="font-size: 1.5rem;color: black;font-weight: 600;">million</span>
                         <p>Up Capital </p>
                     </div>
                 </div>
@@ -587,7 +655,8 @@
                 <div class="col-md-3 col-xs-6">
                     <img src="images/badge.png" alt="" />
                     <div class="stats-info">
-                        <h4 class="counter">100</h4>
+                        <h4 class="counter" style="display: inline;">100</h4><span
+                            style="font-size: 1.5rem;color: black;font-weight: 600;">million</span>
                         <p>Turnover</p>
                     </div>
                 </div>
@@ -603,24 +672,79 @@
         </div>
     </section>
 
-    <section class="home-services-other">
+
+    <section class="solutionSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="text-align: center;margin-bottom: 3rem;">SOLUTIONS</h1>
+                </div>
+                <div class="col-md-4 solutionCard">
+                    <a href="services-1.html">
+                        <div class="solutionCardInner">
+                            <h3>FUEL CONVERSION</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 solutionCard">
+                    <a href="services-2.html">
+                        <div class="solutionCardInner">
+                            <h3>COMMERCIAL GAS
+                                PIPELINE INSTALLATION</h3>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4 solutionCard">
+                    <a href="services-3.html">
+                        <div class="solutionCardInner">
+                            <h3>RETICULATED GAS
+                                SYSTEM</h3>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4 solutionCard">
+                    <a href="services-4.html">
+                        <div class="solutionCardInner">
+                            <h3>GAS LEAKGE
+                                DETECTING SYSTEM AND MONITORING</h3>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4 solutionCard">
+                    <a href="services-5.html">
+                        <div class="solutionCardInner">
+                            <h3>PIPED NATURAL GAS INSTALLATION </h3>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4 solutionCard ">
+                    <a href="services-6.html">
+                        <div class="solutionCardInner">
+                            <h3>AMC AND MAINTENANCE</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="home-services-other">
         <div class="container">
             <div class="section-title text-center">
                 <h2 class="title-services-other title-2">SOLUTIONS</h2>
-
-                <div class="spacer-50"> </div>
             </div>
 
-            <div class="row services-other" style="text-align: justify; cursor: pointer;">
+            <div class="row services-other" style="text-align: justify; cursor: pointer;background-color: aqua;">
                 <a href="services-1.html">
-                    <div class="col-sm-4 servicdhoverlay">
-                        <div class="img-box">
-                            <img src="images/service-icon1.png" alt="SHELL CHEMICALS" />
-                        </div>
-                        <div class="services-info" style="display: inline;">
-                            <h4 class="services-title-one subtitle">FUEL CONVERSION </h4>
-
-                        </div>
+                    <div style="background-color: #666;">
+                        <h3>FUEL CONVERSION </h3>
+                    </div>
                 </a>
             </div>
 
@@ -630,7 +754,7 @@
                         <img src="images/service-icon2.png" alt="COMMERCIAL FUELS" />
                     </div>
                     <div class="services-info" style="display: inline;">
-                        <h4 class="services-title-one subtitle" style="text-align: start;"> COMMERCIAL GAS
+                        <h4 class="services-title-one subtitle" style="text-align: start;color: black;"> COMMERCIAL GAS
                             PIPELINE INSTALLATION
                         </h4>
 
@@ -644,7 +768,7 @@
                         <img src="images/service-icon7.png" alt="SHELL SULPHUR" />
                     </div>
                     <div class="services-info" style="display: inline;">
-                        <h4 class="services-title-one subtitle" style="text-align: start;"> RETICULATED GAS
+                        <h4 class="services-title-one subtitle" style="text-align: start;color: black;"> RETICULATED GAS
                             SYSTEM</h4>
 
                     </div>
@@ -660,7 +784,7 @@
                         <img src="images/service-icon4.png" alt="LUBRICANTS" />
                     </div>
                     <div class="services-info" style="display: inline;">
-                        <h4 class="services-title-one subtitle" style="text-align: initial;">GAS LEAKGE
+                        <h4 class="services-title-one subtitle" style="text-align: initial;color: black;">GAS LEAKGE
                             DETECTING SYSTEM AND MONITORING</h4>
 
                     </div>
@@ -671,8 +795,8 @@
                     <div class="img-box">
                         <img src="images/service-icon6.png" alt="LIQUIFIED PETROLIUM GAS" />
                     </div>
-                    <div class="services-info" style="display: inline;text-align: start;">
-                        <h4 class="services-title-one subtitle">PIPED NATURAL GAS INSTALLATION </h4>
+                    <div class="services-info" style="display: inline;text-align: start">
+                        <h4 class="services-title-one subtitle" style="color: black;">PIPED NATURAL GAS INSTALLATION </h4>
 
                     </div>
                 </a>
@@ -683,7 +807,7 @@
                         <img src="images/service-icon8.png" alt="SHELL TRADING" />
                     </div>
                     <div class="services-info" style="display: inline;text-align: start;">
-                        <h4 class="services-title-one subtitle">AMC AND MAINTENANC</h4>
+                        <h4 class="services-title-one subtitle" style="color: black;">AMC AND MAINTENANC</h4>
 
                     </div>
                 </a>
@@ -692,10 +816,42 @@
         </div>
 
         </div>
-    </section>
+    </section> -->
 
 
     <!-- 
+            <section class="home-links">
+                <div class="container">
+                    <div class="row links">
+                        <div class="col-md-2">
+                            <h4 class="links-title subtitle">Quick Links</h4>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="about-1.html" class="btn btn-primary" role="button">ABOUT US</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="contact-1.html" class="btn btn-primary" role="button">CONTACT US</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="gallery.html" class="btn btn-primary" role="button">GALLERY</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="clientskeral.html" class="btn btn-primary" role="button">ClIENTS</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="btn btn-primary" role="button">LATEST NEWS</a>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+
+
+
+
+    
+
+
+
     <section class="home-news">
         <div class="container">
 
@@ -979,7 +1135,9 @@
                             <div class="contact-details">
                                 <h4 class="pre-footer-title">ZONAL OFFICE</h4>
                                 <p>14/10, Welcome Colony,
-                                    <br> Anna Nagar Western Extn.Chennai - 600 101
+                                    <br> Anna Nagar Western Extn.Chennai - 600 101 <br>
+                                    Mob: 7338881185, Ph: 044 43574824 <br>
+                                    email: sleschennai@gmail.com
                                 </p>
                             </div>
                         </div>
@@ -1038,29 +1196,32 @@
                 <!-- Footer widgets -->
                 <div class="row widgets">
                     <div class="col-md-4 col-sm-6">
-                        <div class="about-txt widget">
-                            <a href="index.html"><img src="images/logo/LOGOOOO (1).jpg" alt="Offshore Logo" /></a>
-
-                            <p>We are an ISO 9001:2015 certified company established in the year 2006 engaged in the
-                                business as Consultant Engineers & Contractors for LPG & other fuel piping
-                                installations, Gas monitoring & detection systems.
-                            </p>
+                        <div class="about-txt widget" style="text-align: center;">
+                            <a href="index.html"><img
+                                    src="assets/Sreelakshmi Energy Systems Pvt. Ltd-logo-white-croped..png"
+                                    alt="Offshore Logo" style="margin-bottom: -10px;" /></a> <br>
+                            <img style="width: 9rem;background-color: white;border-radius: 10px;padding: 7px 10px ; margin-right: 10px;"
+                                src="assets/ISO NEW.png" alt="">
+                            <img style="width: 14rem;" src="assets/MSME-Logo-PNG-Black-and-White33.png" alt="">
 
                             <div class="widgets-social">
 
 
-                                <a href="https://www.facebook.com/sreelakshmi.kochi"> <i class="fa fa-facebook"
-                                        aria-hidden="true"></i> </a>
-                                <a href="https://twitter.com/sreelakshmiltd"> <i class="fa fa-twitter"
+                                <a href="https://www.facebook.com/sreelakshmienergysystems"><i class="fa fa-facebook"
                                         aria-hidden="true"></i></a>
-                                <!-- <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
-                                <a href="https://www.instagram.com/sreelakshmienergysystems"> <i class="fa fa-instagram"
+                                <a href="https://twitter.com/SreelakshmiLtd"><i class="fa fa-twitter"
                                         aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/sreelakshmienergysystems"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a>
+                                <a href=" https://www.linkedin.com/in/sreelakshmi-energy-systems-pvt-ltd-5632ba216"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.youtube.com/channel/UCOn6p2pUCWgUfKnEbVG4bmQ"><i
+                                        class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-6">
-                        <div class="quick-links widget">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="quick-links widget" style="text-align: center;">
                             <h2 class="widget-title">QUICK LINKS</h2>
                             <ul>
                                 <li> <a href="index.html">Home </a> </li>
@@ -1075,14 +1236,15 @@
 
                     <div class="spacer-50 visible-sm"></div>
 
-                    <div class="col-md-6 col-sm-6">
-                        <div class="our-services widget">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="our-services widget" style="hyphens: auto;">
                             <h2 class="widget-title">OUR SERVICES</h2>
                             <ul>
                                 <li> <a href="services-1.html"> FUEL CONVERSION </a> </li>
                                 <li> <a href="services-2.html"> COMMERCIAL GAS PIPELINE INSTALLATION </a> </li>
                                 <li> <a href="services-3.html">RETICULATED GAS SYSTEM </a> </li>
-                                <li> <a href="services-4.html"> GAS LEAKAGE DETECTING SYSTEM AND MONITORING </a> </li>
+                                <li> <a href="services-4.html"> GAS LEAKAGE DETECTING SYSTEM AND MONITORING </a>
+                                </li>
                                 <li> <a href="services-5.html"> PIPED NATURAL GAS INSTALLATION (RESIDENTIAL,
                                         COMMERCIAL AND INDUSTRIAL) </a> </li>
                                 <li> <a href="services-6.html">AMC AND MAINTENANCE </a> </li>
@@ -1117,7 +1279,7 @@
         <div class="copyright">
             <div class="container">
                 <div class="row copyright-bar">
-                    <div class="col-md-6">
+                    <div class="col-md-12" style="display: flex;align-items: center;justify-content: center;">
                         <p>Copyright © 20223 sreelakshmienergysystems . All rights reserved.</p>
                     </div>
                     <!-- <div class="col-md-6 text-right">
@@ -1135,6 +1297,10 @@
 
     <!-- back-to-top link -->
     <a href="#0" class="cd-top"> Top </a>
+
+    <a class="ctaWhatsapp" href="" style="position: fixed;bottom: 100px;right: 25px;z-index: 1000;">
+        <img src="assets/whatsapp.svg" style="width: 5rem;" alt="">
+    </a>
 
     </div>
 
@@ -1326,6 +1492,7 @@
 
 
     </script>
+    <script src="https://kit.fontawesome.com/ab0edea2e8.js" crossorigin="anonymous"></script>
 
 </body>
 
