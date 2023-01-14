@@ -3411,28 +3411,25 @@ section.services-highlights {
 }
 
 @media only screen and (min-width: 767px) {
-    .cd-top {
-        right: 20px;
-        bottom: 20px;
-    }
+   
 }
 
 @media only screen and (min-width: 1024px) {
     .cd-top {
         height: 40px;
         width: 40px;
-        right: 30px;
-        bottom: 30px;
     }
 }
 .ctaWhatsapp{
 
     transition: all ease 0.3s;
+    right: 10px !important;
 }
 .ctaWhatsapp:hover{
     transform: rotate(360deg);
 
 }
+
 
 /*Image Hover Effects*/
 
