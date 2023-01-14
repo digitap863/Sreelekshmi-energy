@@ -3929,3 +3929,13 @@ ul.nav-tabs {
 .viewGallery:hover{
     background-color: #96b5f8;
 }
+@media (max-width:550px) {
+    .companyImage{
+        min-height: 240px;
+    }
+}
+@media (max-width:350px) {
+    .companyImage{
+        min-height: 170px;
+    }
+}
