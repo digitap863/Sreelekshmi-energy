@@ -213,15 +213,69 @@
         }
 
         .msmelogo {
-            background: black;
             position: absolute;
-            right: 5px;
-            top:10%;
-            padding: 10px;
+            right: 1%;
+            top:6%;
+            padding:0px 22px;
         }
         .msmelogo img {
         width: 8rem;
         }
+
+@media (max-width: 1246px) {
+    .msmelogo {
+        display: none;
+    }
+}
+        
+@media (min-width: 1240px) and (max-width:1300px) {
+    .msmelogo img {
+        width: 6rem !important;
+    }
+    .msmelogo img.isologo {
+        display: none;
+    }
+    .msmelogo {
+        position: absolute;
+        right: 5px;
+        top:10%;
+        padding:0px 12px;
+    }
+}
+@media (min-width: 1300px) and (max-width:1350px) {
+    .msmelogo img {
+        width: 7rem !important;
+    }
+    .msmelogo img.isologo {
+        display: none;
+    }
+    .msmelogo {
+        position: absolute;
+        right: 5px;
+        top:10%;
+        padding:0px 15px;
+    }  
+}
+@media (min-width: 1350px) and (max-width:1450px) {
+    .msmelogo img {
+        width: 8rem !important;
+    }
+    .msmelogo img.isologo {
+        display: none;
+    }
+    .msmelogo {
+        position: absolute;
+        right: 2%;
+        top:10%;
+        padding:0px 15px;
+    }  
+}
+@media (min-width: 1450px) and (max-width:1500px) {
+    .msmelogo img.isologo {
+        width: 5rem !important;
+    }
+
+}
     </style>
 
 </head>
@@ -310,9 +364,10 @@
                         </div>
 
                         <div class="msmelogo">
-                            <img src="assets/MSME-Logo-PNG-Black-and-White33.png" alt="">
-                            </div> 
-
+                            <img src="assets/MSME LOGO.gif" alt="">
+                            <img class="isologo" style="width: 6rem;border-radius:10px;background:rgb(164, 162, 162);" src="assets/ISO NEW.png" alt="">
+                        </div> 
+                        
                     </div>
 
                 </div>
@@ -321,8 +376,8 @@
                 <nav id="navbar" class="collapse navbar-collapse main-menu">
                     <div class="container">
                         <ul class="main-menu">
-                            <li class="active"> <a href="index.html"> Home </a></li>
-                            <li> <a href="about-1.html"> About</a>
+                            <li class="active"> <a href="#"> Home </a></li>
+                            <li> <a href="about-1.html"> About</a></li>
 
                             <li class="dropdown"> <a href="#" data-toggle="dropdown"> Solutions
                                     <i class="fa fa-chevron-down dropdown-toggle"> </i> </a>
@@ -337,15 +392,11 @@
                                     <li> <a href="services-5.html"> ⦁ PIPED NATURAL GAS INSTALLATION </a> </li>
                                     <li> <a href="services-6.html">⦁ AMC AND MAINTENANCE
                                         </a> </li>
-                                    <li> <a href="services-7.html">⦁ SUNTEC AND REILLO BURNERS
-                                        </a> </li>
+                                  <!--  <li> <a href="services-7.html">⦁ SUNTEC AND REILLO BURNERS
+                                        </a> </li> 
                                     <li> <a href="services-8.html">⦁ LOT SKID SYSTEM
-                                        </a> </li>
+                                        </a> </li> -->
                                 </ul>
-                            </li>
-
-
-
                             </li>
 
                             <li class="dropdown"> <a href="#" data-toggle="dropdown">PRODUCTS
@@ -360,7 +411,7 @@
                                 <li> <a href="product-7.html">Regulators</a> </li>
                                 <li> <a href="product-8.html">Suntec and Relio burners</a> </li>
                                 <li> <a href="product-9.html">LOT Skid System</a> </li>
-                                <li> <a href="product-10.html">Dryers</a> </li>
+                               <!-- <li> <a href="product-10.html">Dryers</a> </li> -->
                             </ul>
                             </li>
 
@@ -377,7 +428,7 @@
 
                                 </ul>
                             </li>
-                            <!-- <li><a href="careers.html"> About </a> </li> -->
+                            <li> <a href="download.html"> Downloads </a>
                             <li><a href="contact-1.html"> CONTACT US</a> </li>
                         </ul>
                     </div>
@@ -393,7 +444,7 @@
                 <div class="flexslider">
                     <ul class="slides">
                         <li class="has-overlay">
-                            <img src="images/IMAGE.webp" alt="Slider 1" />
+                            <img src="images/Untitled design (8) (1).jpg" alt="Slider 1" />
                             <div class="slider-content">
                                 <div class="container">
                                     <h2 class="animation-header">
@@ -403,13 +454,13 @@
                                     </h2>
                                     <p class="animation-visible">Providing innovative solutions, environment and sustainable<br> solutions to our customers
                                     </p>
-                                    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
-                                            class="fa fa-angle-right"></i> </a>
+                                 <!--   <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
+                                            class="fa fa-angle-right"></i> </a> -->
                                 </div>
                             </div>
                         </li>
                         <li class="has-overlay">
-                            <img src="images/sustainable-living-environmentalist-hand-holding-green-earth.jpg"
+                            <img src="images/IMAGE.webp"
                                 alt="Slider 2" />
                             <div class="slider-content text-center">
                                 <div class="container">
@@ -417,8 +468,8 @@
                                     <h2 class="animation-header green-nav">LPG – Clean & Efficient Energy Solution</h2>
                                     <p class="animation-visible"> Most efficient fuel eco-friendly with large network in market
                                     </p>
-                                    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
-                                            class="fa fa-angle-right"></i> </a>
+                                <!--  <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
+                                            class="fa fa-angle-right"></i> </a> -->
                                 </div>
                             </div>
                         </li>
@@ -433,8 +484,8 @@
                                         <!-- <br> Compellingly fabricate cutting-edge portals through alternative
                                         <br> opportunities. Objectively customize. -->
                                     </p>
-                                    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
-                                            class="fa fa-angle-right"></i> </a>
+                                <!--    <a class="btn primary-btn animation-visible" href="about-1.html"> KNOW MORE <i
+                                            class="fa fa-angle-right"></i> </a> -->
                                 </div>
                             </div>
                         </li>
@@ -465,7 +516,7 @@
                             <div class="company-details" style="text-align: justify; ">
                                 <h2 class="company-title color-title"> ABOUT </h2>
                                 <h4 class="company-subtitle subtitle animation-about"> SreeLakshmi Energy Systems Pvt.
-                                    Ltd
+                                    Ltd.
                                     Complete Solutions for LPG & PNG Fuel Piping Systems. </h4>
                                 <p>We are an ISO 9001:2015 Certified & MSME Registered Company established in the year 2006 and engaged in the business as Consultant Engineers & Contractors
                                      for LPG/PNG Fuel Piping Installations, Gas Monitoring Systems, Gas Detection Systems, Industrial Burners & Heat Pumps. <br>
@@ -488,7 +539,7 @@
                     <div class="row ceo" style="align-items: center;">
                         <div class="col-md-6">
 
-                            <img src="assets/ceo-image.jpg" alt="CEO" />
+                            <img src="assets/ceo-image.webp" alt="CEO" />
 
                         </div>
 
@@ -614,7 +665,7 @@
 
                         <div class="col-sm-6">
                             <div class="hover-effect" style="width: 80%;">
-                                <img src="images/Untitled design (5).png" style="margin-top: -3rem;" />
+                                <img src="images/ezgif.com-gif-maker (16).webp" />
                             </div>
                         </div>
                     </div>
@@ -948,6 +999,26 @@
 
             <div class="row partners">
                 <div class="logo-slides slides owl-carousel">
+
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="./images/gallery/clients/clients1/indianoil2.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="./images/gallery/clients/clients1/indianoil1.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="./images/gallery/clients/clients1/indianoil3.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+
                     <div class="item">
                         <div class="partner-images ">
                             <img src="./images/gallery/clients/clients1/RP GROUP (13).jpg" alt="Partner Image 1"
@@ -985,6 +1056,19 @@
                     <div class="item">
                         <div class="partner-images">
                             <img src="./images/gallery/clients/clients1/RP GROUP (52).jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="./images/gallery/clients/clients1/indianoil4.jpg" alt="Partner Image 1"
+                                style="height: 10rem;">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partner-images">
+                            <img src="./images/gallery/clients/clients1/RP GROUP-indianoil.jpg" alt="Partner Image 1"
                                 style="height: 10rem;">
                         </div>
                     </div>
@@ -1344,8 +1428,8 @@
                                 <li> <a href="index.html">Home </a> </li>
                                 <li> <a href="about-1.html"> About Us </a> </li>
                                 <li> <a href="contact-1.html"> Contact US </a> </li>
-                                <li> <a href="product-1.html"> LPG Products</a> </li>
-                                <li> <a href="clientskeral.html"> Clients </a> </li>
+                                <li> <a href="product-1.html">Products</a> </li>
+                                <li> <a href="clients1.html"> Clients </a> </li>
 
                             </ul>
                         </div>

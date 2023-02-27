@@ -224,16 +224,16 @@ main.main {
     clear: both;
     overflow: hidden;
 }
+
 .msmelogo {
-    background: black;
     position: absolute;
-    right: 5px;
-    top:8%;
-    padding: 8px;
+    right: 1%;
+    top:6%;
+    padding:0px 22px;
 }
 .msmelogo img {
-    width: 9rem;
-    }
+width: 8rem;
+}
 
 .spacer-5 {
     height: 5px
@@ -754,8 +754,8 @@ section.home-slider {
 }
 
 .slider-content h2 {
-    font-size: 50px;
-    color: #fff;
+    font-size: 54px;
+    color: floralwhite;
     font-weight: bold;
     line-height: 1.2;
     margin: 0 0 30px;
@@ -2086,7 +2086,7 @@ ul.download-list li span {
 }
 
 .pre-footer > div:nth-child(3n) .contact-box {
-    background: #ffd013;
+ //background: #ffd013;
 }
 
 .contact-box i.fa {
@@ -3950,21 +3950,80 @@ ul.nav-tabs {
     }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1246px) {
     .msmelogo {
         display: none;
     }
 }
-
+       
 @media (min-width: 1240px) and (max-width:1300px) {
     .msmelogo img {
-        width: 5rem !important;
+        width: 6rem !important;
     }
-    
+    .msmelogo img.isologo {
+        display: none;
+    }
+    .msmelogo {
+        position: absolute;
+        right: 5px;
+        top:10%;
+        padding:0px 12px;
+    }
 }
 @media (min-width: 1300px) and (max-width:1350px) {
     .msmelogo img {
+        width: 7rem !important;
+    }
+    .msmelogo img.isologo {
+        display: none;
+    }
+    .msmelogo {
+        position: absolute;
+        right: 5px;
+        top:10%;
+        padding:0px 15px;
+    }  
+}
+
+@media (min-width: 1350px) and (max-width:1450px) {
+    .msmelogo img {
+        width: 8rem !important;
+    }
+    .msmelogo img.isologo {
+        display: none;
+    }
+    .msmelogo {
+        position: absolute;
+        right: 2%;
+        top:10%;
+        padding:0px 15px;
+    }  
+}
+@media (min-width: 1450px) and (max-width:1500px) {
+    .msmelogo img.isologo {
         width: 5rem !important;
     }
-    
+
+}
+
+@media (min-width: 330px) and (max-width:450px) {
+    .pd img {
+        height: 160px !important;
+        width: auto !important;
+        transition: all 0.5s;
+    }
+}
+@media (min-width: 500px) and (max-width:670px) {
+    .pd img {
+        height: 170px !important;
+        width: 50% !important;
+        transition: all 0.5s;
+    }
+}
+@media (min-width: 670px) and (max-width:767px) {
+    .pd img {
+        height: 180px !important;
+        width: 58% !important;
+        transition: all 0.5s;
+    }
 }
