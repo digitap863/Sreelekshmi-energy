@@ -449,7 +449,7 @@ ul.main-menu li a {
     font-weight: bold;
     line-height: 1.467;
     text-transform: uppercase;
-    padding: 20px 25px;
+    padding: 20px 23px;
     display: block;
     -webkit-transition: 0.5s ease all;
     -o-transition: 0.5s ease all;
@@ -3950,61 +3950,13 @@ ul.nav-tabs {
     }
 }
 
-@media (max-width: 1246px) {
-    .msmelogo {
+@media (min-width: 990px) and (max-width: 1044px) {
+    .top-info-social img {
         display: none;
     }
 }
        
-@media (min-width: 1240px) and (max-width:1300px) {
-    .msmelogo img {
-        width: 6rem !important;
-    }
-    .msmelogo img.isologo {
-        display: none;
-    }
-    .msmelogo {
-        position: absolute;
-        right: 5px;
-        top:10%;
-        padding:0px 12px;
-    }
-}
-@media (min-width: 1300px) and (max-width:1350px) {
-    .msmelogo img {
-        width: 7rem !important;
-    }
-    .msmelogo img.isologo {
-        display: none;
-    }
-    .msmelogo {
-        position: absolute;
-        right: 5px;
-        top:10%;
-        padding:0px 15px;
-    }  
-}
 
-@media (min-width: 1350px) and (max-width:1450px) {
-    .msmelogo img {
-        width: 8rem !important;
-    }
-    .msmelogo img.isologo {
-        display: none;
-    }
-    .msmelogo {
-        position: absolute;
-        right: 2%;
-        top:10%;
-        padding:0px 15px;
-    }  
-}
-@media (min-width: 1450px) and (max-width:1500px) {
-    .msmelogo img.isologo {
-        width: 5rem !important;
-    }
-
-}
 
 @media (min-width: 330px) and (max-width:450px) {
     .pd img {
